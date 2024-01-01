@@ -1,0 +1,102 @@
+@import './_vars.scss';
+@import './_reset.scss';
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+	font-size: 20px;
+	overflow-x: hidden;
+
+	@media (max-width: 1620px) {
+		font-size: 16px;
+	}
+}
+
+body {
+	background: var(--color-dark);
+	color: var(--color-white);
+	font-family: 'Poppins', sans-serif;
+	width: 100vw;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-block-start: 75px;
+}
+
+.container {
+	max-width: 1450px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+	background: var(--color-dark);
+	width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-black);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+	color: inherit;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.17em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+}
+ul > li {
+	display: list-item;
+	list-style: none;
+}
+ol > li {
+	display: list-item;
+	list-style: none;
+}
+button {
+	outline: none; /* Для синий ободки */
+	border: 0;
+	background: transparent;
+}
+
+input,
+textarea {
+	color: var(--color-white);
+}
+i {
+	font-style: italic;
+}

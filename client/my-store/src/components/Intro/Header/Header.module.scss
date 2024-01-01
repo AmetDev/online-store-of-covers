@@ -1,0 +1,63 @@
+.header_wrapper {
+	max-width: 1200px;
+	height: 39px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	.iSharlotka {
+		width: 182.522px;
+		height: 21.126px;
+		flex-shrink: 0;
+	}
+	.input-with-icon {
+		position: relative;
+	}
+	.input-with-icon input {
+		padding-left: 40px; /* установите отступ слева, чтобы освободить место для иконки */
+		background-repeat: no-repeat;
+		background-position: 10px center; /* настроить позицию иконки */
+		background-size: 20px; /* настроить размер иконки */
+	}
+	.input {
+		padding: 11px 15px;
+		width: 198px;
+		height: 38px;
+		border-style: solid;
+		border-radius: 5px;
+		border-width: 2px;
+		gap: 20px;
+		border-color: var(--color-graylightborder);
+
+		color: var(--color-gray);
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+	.vector {
+		width: 0.833px;
+		height: 20.8px;
+		margin-left: 9px;
+		margin-right: 9px;
+		background-color: var(--color-graylightborder);
+	}
+	.did {
+		width: 134.867px;
+		height: 20.8px;
+		flex-shrink: 0;
+		margin-right: 30px;
+	}
+	.first_text {
+		display: inline-block;
+		width: 160px;
+		text-align: center;
+		font-size: 12px;
+		color: var(--color-gray);
+	}
+	.input {
+		height: 39px;
+		width: 198px;
+	}
+	//justify-content: space-between;
+}
