@@ -5,22 +5,36 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: space-between;
 	.iSharlotka {
-		width: 182.522px;
-		height: 21.126px;
-		flex-shrink: 0;
+		display: block;
+		width: auto;
+		height: auto;
 	}
-	.input-with-icon {
+	.shar_icon {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+	}
+	.search {
 		position: relative;
+		width: 200px;
+		margin-left: 30px;
+		margin-right: 35px;
 	}
-	.input-with-icon input {
-		padding-left: 40px; /* установите отступ слева, чтобы освободить место для иконки */
-		background-repeat: no-repeat;
-		background-position: 10px center; /* настроить позицию иконки */
-		background-size: 20px; /* настроить размер иконки */
+	.imgInput {
+		position: absolute;
+		left: 165px;
+		//padding: 10px 12px;
+		pointer-events: none;
+		top: 0.8rem;
 	}
+
 	.input {
+		padding-left: 24px;
+		width: 170px;
 		padding: 11px 15px;
+		outline: none;
 		width: 198px;
 		height: 38px;
 		border-style: solid;
@@ -35,6 +49,36 @@
 		font-weight: 500;
 		line-height: normal;
 	}
+	button > span {
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		color: var(--color-gray);
+	}
+	.imgGroup {
+		display: block;
+
+		margin-left: 175px;
+	}
+	.imgGroup > img {
+		cursor: pointer;
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+	div > button {
+		margin-left: 25px;
+		//margin-: 189px;
+	}
+	div:last-of-type > button:last-of-type > span {
+		font-size: 14px;
+		cursor: pointer;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		border-bottom: 2px solid var(--color-gray);
+	}
+
 	.vector {
 		width: 0.833px;
 		height: 20.8px;
