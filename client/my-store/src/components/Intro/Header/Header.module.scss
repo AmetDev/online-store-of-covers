@@ -1,4 +1,5 @@
 .header_wrapper {
+	margin-top: 35px;
 	max-width: 1200px;
 	height: 39px;
 	display: flex;
@@ -19,15 +20,13 @@
 	.search {
 		position: relative;
 		width: 200px;
-		margin-left: 30px;
 		margin-right: 35px;
 	}
 	.imgInput {
 		position: absolute;
-		left: 165px;
-		//padding: 10px 12px;
+		left: 160px;
 		pointer-events: none;
-		top: 0.8rem;
+		top: 0.6rem;
 	}
 
 	.input {
@@ -58,17 +57,22 @@
 	}
 	.imgGroup {
 		display: block;
-
-		margin-left: 175px;
+		margin-left: 189px;
 	}
-	.imgGroup > img {
+	.imgGroup > img:last-of-type {
 		cursor: pointer;
-		margin-left: 3px;
-		margin-right: 3px;
+		margin-left: 20px;
+		//margin-right: px;
 	}
 	div > button {
-		margin-left: 25px;
+		margin-left: 20px;
 		//margin-: 189px;
+	}
+	.profileBlock {
+		margin-left: 25px;
+	}
+	div:last-of-type > button:last-of-type {
+		margin-left: 5px;
 	}
 	div:last-of-type > button:last-of-type > span {
 		font-size: 14px;

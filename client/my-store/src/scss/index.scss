@@ -92,7 +92,23 @@ button {
 	border: 0;
 	background: transparent;
 }
-
+::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: var(--color-gray);
+}
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: var(--color-gray);
+}
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	opacity: 1;
+	color: var(--color-gray);
+}
+:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: var(--color-gray);
+}
 input,
 textarea {
 	color: var(--color-white);

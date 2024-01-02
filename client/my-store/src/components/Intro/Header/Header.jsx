@@ -44,7 +44,7 @@ const Header = () => {
 				<img src={card} alt='card' />
 				<img src={like} alt='like' />
 			</div>
-			<div>
+			<div className={styles.profileBlock}>
 				<img src={profile} alt='like' />
 				<button>
 					<span>Войти</span>
