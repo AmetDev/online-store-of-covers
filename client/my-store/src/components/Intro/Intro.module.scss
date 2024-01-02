@@ -25,6 +25,28 @@
 		}
 	}
 }
+.wrapperBlock {
+	padding-top: 33px;
+	padding-left: 45px;
+	position: relative;
+	width: 355px;
+}
+.BlockImg {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.BlockUnderTitle {
+	color: var(--color-gray);
+
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	border-bottom: 1px solid var(--color-gray);
+	width: 50px;
+	//border-height: 20px;
+}
 
 .block_fly {
 	//	background-color: #664f4f;
