@@ -1,7 +1,8 @@
 .intro_wrapper {
 	margin-top: 60px;
-	display: block;
+	display: flex;
 	max-width: 1200px;
+
 	.intro_wrapper_paraph {
 		display: flex;
 		flex-wrap: wrap;
@@ -11,6 +12,7 @@
 		font-size: 32px;
 		font-style: normal;
 		font-weight: 300;
+		margin-bottom: 182px;
 		//line-height: 56px;
 
 		text-align: justify;
@@ -25,19 +27,66 @@
 		}
 	}
 }
+.wrapperFirst {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.IntroLinkWrapperLast {
+	margin-top: 50px;
+}
+.IntroWrappersParagraph {
+	img {
+		margin-left: 23px;
+	}
+	display: flex;
+	color: var(--color-gray);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 34px; /* 188.889% */
+}
+.wrapperSecond {
+	display: flex;
+}
 .wrapperBlock {
 	padding-top: 33px;
 	padding-left: 45px;
 	position: relative;
 	width: 355px;
+	box-shadow: 5px 5px 10px #adabab;
+	margin-bottom: 20px;
 }
 .BlockImg {
+	//vertical-align: top;
+	//position: absolute;
+}
+.BlockWrapp {
 	position: absolute;
-	left: 0;
-	top: 0;
+	top: 50%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+
+	color: #424242;
+
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%; /* 14.848px */
+	text-transform: uppercase;
 }
 .BlockUnderTitle {
 	color: var(--color-gray);
+
+	.BlockPrice {
+		color: #424242;
+		font-size: 42px;
+		font-style: normal;
+		font-weight: 250;
+		line-height: 92.8%; /* 35.264px */
+		text-transform: uppercase;
+	}
 
 	font-size: 16px;
 	font-style: normal;
@@ -47,14 +96,34 @@
 	width: 50px;
 	//border-height: 20px;
 }
+.BlockTitle {
+	-webkit-text-stroke: 1px #fcfcfc;
+	text-stroke: 1px #fcfcfc;
+	text-shadow: -1px -1px 0 #fcfcfc, 1px -1px 0 #fcfcfc -1px 1px 0 #fcfcfc,
+		1px 1px 0 #fcfcfc;
+	width: 198px;
+	height: 66px;
+	color: var(--color-blue-dark);
+
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
 
 .block_fly {
-	//	background-color: #664f4f;
+	position: relative;
+	//background-color: #664f4f;
 	width: 435px;
 	height: 315px;
 	border-radius: 10px;
 	background: #fcfcfc;
 	flex-shrink: 0;
+}
+.btns {
+	top: 86%;
+	left: 35px;
+	position: absolute;
 }
 
 .btnblue {
