@@ -1,0 +1,104 @@
+.PhoneElement {
+	border: 1px solid #000;
+	position: relative;
+	width: 199px;
+	height: 354px;
+	margin-right: 20px;
+	&:last-of-type {
+		margin-right: 0;
+	}
+	div > span:first-of-type {
+		color: var(--color-gray-text);
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+	div > span:last-of-type {
+		color: #a9a9a9;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		text-decoration-line: line-through;
+	}
+}
+.discount {
+	color: #fff;
+	width: 64px;
+	height: 26px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	border-radius: 5px;
+	border-bottom: solid 2px var(--color-blue-dark);
+	background-color: var(--color-blue-light);
+
+	position: absolute;
+	top: 20px;
+	left: 10px;
+}
+.btnLike {
+	position: absolute;
+	top: 20px;
+}
+
+.PhoneElementTitle {
+	color: var(--color-gray-text);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.PhoneElementType {
+	color: var(--color-gray-dark);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.PhoneElementTypeProduct {
+	color: var(--color-gray-dark);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.PhoneElementConstructorWrapper {
+	display: flex;
+	border: var(--color-graylightborder) 1px solid;
+	border-radius: 5px 0px 0px 5px;
+	.PhoneElementCardIcon {
+		border-radius: 5px 0px 0px 5px;
+		border-right: 1px solid;
+		border-top: 1px solid;
+		display: flex;
+		width: 43px;
+		height: 43px;
+		justify-content: center;
+	}
+}
+.PhoneElementConstructor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 154px;
+	height: 43px;
+	flex-shrink: 0;
+	border-radius: 5px 0px 0px 5px;
+	background: var(--graylightborder, #edf0f5);
+	button > span {
+		color: #606675;
+
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+}

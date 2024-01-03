@@ -28,7 +28,7 @@ const IntroLink = () => {
 		<div className={styles.IntroIconLinks}>
 			{linksData.map(link => {
 				return (
-					<a href={link.linkHref}>
+					<a target='_blank' href={link.linkHref}>
 						<img src={link.link} alt='' srcset='' />
 					</a>
 				)
