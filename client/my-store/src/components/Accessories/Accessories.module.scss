@@ -1,2 +1,15 @@
 .rootAccessories {
+	//display: flex;
+	max-width: 1200px;
+	display: flex;
+
+	flex-direction: column;
+	span {
+		color: var(--color-gray);
+
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
 }

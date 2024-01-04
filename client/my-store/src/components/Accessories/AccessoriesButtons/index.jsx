@@ -1,6 +1,6 @@
 import React from 'react'
 import { dataAccessories } from '../AccessoriesData/index.js'
-import styles from './Accessories.model.scss'
+import styles from './Accessories.module.scss'
 import AccessoriesButtonElement from './AccessoriesButtonElement/index'
 const GridPhones = () => {
 	return (
