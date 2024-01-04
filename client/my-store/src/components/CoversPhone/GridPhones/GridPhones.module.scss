@@ -1,4 +1,21 @@
 .PhonesWrapperGrid {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+	max-width: 1200px;
+}
+.btnCatalog {
+	color: var(--color-gray);
+
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration-line: underline;
+}
+.PhonesRootGrid {
+	display: flex;
+
+	justify-content: flex-start;
+	flex-direction: column;
+	max-width: 1200px;
 }

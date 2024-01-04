@@ -9,25 +9,38 @@ const PhoneElement = ({ params }) => {
 	return (
 		<div className={styles.PhoneElement}>
 			<div className={styles.discount}>- {discount} %</div>
-			<img src={image} alt='' />
-			<button className={styles.btnLike}>
+			<img className={styles.imgPhone} src={image} alt='' />
+			<button style={{}} className={styles.btnLike}>
 				<img src={coolIcon} alt='' />
 			</button>
 			<div className={styles.PhoneElementTitle}>{title}</div>
 			<div className={styles.PhoneElementType}>{type}</div>
 			<div className={styles.PhoneElementTypeProduct}>{typeProduct}</div>
-			<div>
+			<div className={styles.PhoneElementBlockPrice}>
 				<span>{price} ₽ </span>
-				<span> {withoutDiscount} ₽</span>
+				<span> {`${withoutDiscount}` + '₽'} </span>
 			</div>
 			<div className={styles.PhoneElementConstructorWrapper}>
 				<div className={styles.PhoneElementConstructor}>
-					<button>
+					<button
+						onClick={() => {
+							console.log('hello')
+						}}
+					>
 						<span>В конструктор</span>
 					</button>
 				</div>
-				<div className={styles.PhoneElementCardIcon}>
-					<button>
+				<div
+					onClick={() => {
+						console.log('je;;p')
+					}}
+					className={styles.PhoneElementCardIcon}
+				>
+					<button
+						onClick={() => {
+							console.log('je;;p')
+						}}
+					>
 						<img src={cardIcon} alt='' srcset='' />
 					</button>
 				</div>

@@ -1,7 +1,13 @@
 .PhoneElement {
-	border: 1px solid #000;
+	/* border: 1px solid #000; */
 	position: relative;
+
 	width: 199px;
+	&:last-of-type {
+		-webkit-box-shadow: inset -100px 0px 86px 20px rgb(255, 255, 255);
+		-moz-box-shadow: inset -100px 0px 86px 20px rgb(255, 255, 255);
+		box-shadow: inset -100px 0px 86px 20px rgb(255, 255, 255);
+	}
 	height: 354px;
 	margin-right: 20px;
 	&:last-of-type {
@@ -16,12 +22,22 @@
 	}
 	div > span:last-of-type {
 		color: #a9a9a9;
+		position: absolute;
+		z-index: -1;
+		top: 25%;
+		left: 60px;
 		font-size: 12px;
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
 		text-decoration-line: line-through;
 	}
+}
+.imgPhone {
+	z-index: -2;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .discount {
 	color: #fff;
@@ -40,43 +56,89 @@
 	background-color: var(--color-blue-light);
 
 	position: absolute;
+
+	z-index: -1;
+
 	top: 20px;
 	left: 10px;
 }
 .btnLike {
 	position: absolute;
+	cursor: pointer;
+	pointer-events: auto;
+	left: 90%;
 	top: 20px;
+}
+.PhoneElement {
+	&:last-of-type {
+		.btnLike {
+			z-index: -1;
+		}
+		.PhoneElementConstructorWrapper {
+			z-index: -1;
+		}
+	}
 }
 
 .PhoneElementTitle {
+	position: absolute;
+	top: 160px;
+	left: 0;
+	//margin-bottom: 40px;
 	color: var(--color-gray-text);
 	font-size: 16px;
+	margin-top: 15px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
+	z-index: -1;
 }
 .PhoneElementType {
 	color: var(--color-gray-dark);
+	position: absolute;
+	top: 57%;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+
+	z-index: -1;
+}
+.PhoneElementBlockPrice {
+	margin-top: 14px;
+	margin-bottom: 20px;
+	z-index: -1;
+	position: absolute;
+
+	top: 70%;
 }
 .PhoneElementTypeProduct {
+	position: absolute;
+	top: 63%;
 	color: var(--color-gray-dark);
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+
+	z-index: -1;
 }
 .PhoneElementConstructorWrapper {
-	display: flex;
+	position: absolute;
+	top: 85%;
+
 	border: var(--color-graylightborder) 1px solid;
-	border-radius: 5px 0px 0px 5px;
+	border-radius: 5px 5px 5px 5px;
 	.PhoneElementCardIcon {
-		border-radius: 5px 0px 0px 5px;
+		/* border-radius: 5px 0px 0px 5px;
 		border-right: 1px solid;
-		border-top: 1px solid;
+		border-top: 1px solid; */
+		position: absolute;
+		left: 72%;
+		top: 0;
+		border-radius: 5px;
+		background-color: #fff;
+		z-index: 100;
 		display: flex;
 		width: 43px;
 		height: 43px;
@@ -84,19 +146,18 @@
 	}
 }
 .PhoneElementConstructor {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	width: 154px;
+	width: 153px;
 	height: 43px;
-	flex-shrink: 0;
+
 	border-radius: 5px 0px 0px 5px;
 	background: var(--graylightborder, #edf0f5);
 	button > span {
 		color: #606675;
+		position: absolute;
 
-		font-size: 16px;
+		top: 30%;
+		left: 3%;
+		font-size: 14px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: normal;

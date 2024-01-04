@@ -40,4 +40,22 @@ export const data = [
 		withoutDiscount: 790,
 		image: image4,
 	},
+	{
+		title: 'ХК Сочи лого №1',
+		type: 'Хоккей',
+		typeProduct: 'Силиконовый чехол',
+		price: 650,
+		discount: 18,
+		withoutDiscount: 790,
+		image: image1,
+	},
+	{
+		title: 'ХК Сочи лого №1',
+		type: 'Хоккей',
+		discount: 15,
+		typeProduct: 'Силиконовый чехол',
+		price: 650,
+		withoutDiscount: 790,
+		image: image2,
+	},
 ]
