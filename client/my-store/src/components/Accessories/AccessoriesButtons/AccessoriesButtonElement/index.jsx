@@ -1,7 +1,7 @@
 import React from 'react'
 import coolIcon from '../../../../assets/icons/fakedata/coolicon.svg'
 import cardIcon from '../../../../assets/icons/fakedata/shopping-cart_118662 1.svg'
-import styles from './PhoneElement.module.scss'
+import styles from './AccessorieButtonElement.module.scss'
 const PhoneElement = ({ params }) => {
 	const { title, type, typeProduct, price, withoutDiscount, image, discount } =
 		params

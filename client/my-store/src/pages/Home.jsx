@@ -1,4 +1,5 @@
 import React from 'react'
+import Accessories from '../components/Accessories/Accessories.jsx'
 import CoversPhone from '../components/CoversPhone/CoversPhone'
 import Header from '../components/Intro/Header/Header'
 import Intro from '../components/Intro/Intro'
@@ -9,6 +10,7 @@ const Home = () => {
 			<Header />
 			<Intro />
 			<CoversPhone />
+			<Accessories />
 		</div>
 	)
 }

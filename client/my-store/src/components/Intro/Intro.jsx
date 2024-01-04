@@ -80,7 +80,6 @@ const Intro = () => {
 		let count = 0
 		function loopCounter() {
 			setInterval(() => {
-				console.log(count)
 				setCurrentElement(count)
 				ref.current.map(el => {
 					el.style.backgroundColor = '#dfe3f0	'
